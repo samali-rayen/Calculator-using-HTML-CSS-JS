@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!-- for the font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- for the font -->
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap" rel="stylesheet"> <!-- for the font -->
+    <!-- for the bootstrap decoration -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous"> 
     <link rel="stylesheet" href="index.css" >
+    <script src="black-white.js" defer></script>
     <title>Projec-1 Calculator</title>
 </head>
 <body>
-    <div class="container">
+     <div class="navBar">
+        <i class="bi bi-brightness-low" id="switch"></i>
+            <div class="about">
+                about us
+            </div>
+            <div class="report">
+                report Bug
+            </div>
+     </div>
+    <div class="calculator">
         <input type="text" id="result" disabled>
         <div class="buttons">
             <div class="on-off" id="on-off">on/off</div>

@@ -39,5 +39,4 @@ function equal(){
         alert('Invalid equation');
     }  
     }
-
 }
