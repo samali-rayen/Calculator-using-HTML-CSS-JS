@@ -111,11 +111,11 @@ input{
     font-size: 30px;
     border-top:1px solid grey;
     border-bottom:1px solid grey;
-    transition: .8s;
-    -webkit-transition: .8s;
-    -moz-transition: .8s;
-    -ms-transition: .8s;
-    -o-transition: .8s;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
 }
 
 .navBar div:hover{
