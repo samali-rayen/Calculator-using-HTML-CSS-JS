@@ -2,7 +2,6 @@
     font-family: 'Changa', sans-serif;
     box-sizing: border-box;
     margin: 0; 
-    font-size:60px;
 }
 body{
     background:linear-gradient(#544a7d,#ffd452);
@@ -11,6 +10,59 @@ body{
     background-position: center center;
     min-height: 100vh;
     display: flex;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    /* the flex wrap is impotant to  set the justifu content */
+    justify-content: space-around;
+}
+.theme{
+    background-color:rgba(255, 255, 255, 0.591);
+    width: 700px;
+    height: 100px;
+    margin-left: 600px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+label{
+    position:absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+label::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+    cursor: pointer;
+    background-color: black;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
 }
 .calculator{
     width: 900px;
@@ -27,10 +79,13 @@ body{
     justify-self:center;
     align-self: center;
     margin-left:40%;
+    font-size: 60px;
 }
 input{
+    font-size: 60px;
     background-color: rgb(97, 161, 97);
     width: 800px;
+    height: 100px;
     border-radius: 10px;
     margin: 30px auto;
     -webkit-border-radius: 10px;
@@ -45,7 +100,7 @@ input{
 }
 .buttons div:not(.on-off){
    background-color: darkgrey;
-   margin: 20px;
+   margin: 10px;
    width: 140px;
    padding: 8px;
    box-shadow: 1px 3px 5px 2px grey;
@@ -89,6 +144,7 @@ input{
     flex-direction: column;
 }
 .navBar div{
+    font-size: 30px;
     border-top:1px solid grey;
     border-bottom:1px solid grey;
     transition: .8s;
@@ -97,35 +153,19 @@ input{
     -ms-transition: .8s;
     -o-transition: .8s;
 }
-.navBar i{
-    transition: .8s;
-    -webkit-transition: .8s;
-    -moz-transition: .8s;
-    -ms-transition: .8s;
-    -o-transition: .8s;
-    margin-left: 5px;
-}
-.navBar div:hover:not(.logo){
+
+.navBar div:hover{
     background-color: #0f577e;
     cursor: pointer;
 }
-.bi-brightness-low{
-    align-self: center;
-}
-.bi-brightness-low:hover {
-    animation: rotate 2s linear;
-}
-@keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-      -webkit-transform: rotate(360deg);
-      -moz-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      -o-transform: rotate(360deg);
-}}
 .zeros{
     margin: 15px 15px;
+}
+label.active:before{
+    left: 24px;
+    background: #fff;
+}
+body.night{
+    background: #000;
+    color: #fff;
 }
